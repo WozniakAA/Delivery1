@@ -1,0 +1,15 @@
+﻿using Delivery1.ViewModels
+    
+<h2>Города, куда осуществляется доставка</h2>
+    
+    @{
+        foreach (var cit in Model.getallcities)
+        {
+            <div>
+                <h2>Город: @cit.name</h2>
+                <p>Вид доставки: @cit.Type_c</p>
+            </div>
+
+        }
+    }
+
